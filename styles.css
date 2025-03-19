@@ -1,0 +1,13 @@
+.display-days {
+  border: 10px, solid, lightblue;
+  padding: 10px;
+  margin: 10px;
+  text-align: start;
+  align-content: start;
+}
+.display-items {
+  text-align: start;
+  align-content: start;
+  align-items: start;
+  align-self: flex-start;
+}
