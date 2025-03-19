@@ -3,7 +3,7 @@ const model = {
         days: {
             monday: [],
             tuesday: [],
-            wedensday: [],
+            wednesday: [],
             thursday: [],
             friday: [],
             saturday: [],
