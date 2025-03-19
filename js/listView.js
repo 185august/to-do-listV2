@@ -22,7 +22,8 @@ function updateView() {
 function renderList() {
     let listHtml = ''
     for (const day in model.data.days) {
-        listHtml += `<div class="display-days">${day}: ${model.data.days[day].map((item => `<div class="display-items">${item.time}: ${item.todo}</div>`)).join(', ')}</div> 
+        listHtml += `<div class="display-days">${day}: 
+        ${model.data.days[day].map((item => `<div class="display-items">${item.time}: ${item.todo}</div> <button onclick="deleteItem('${day}', ${item.id})">X</button>`)).join(', ')}</div> 
         `
 
     }

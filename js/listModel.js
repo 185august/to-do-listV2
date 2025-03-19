@@ -9,6 +9,7 @@ const model = {
             saturday: [],
             sunday: [],
         },
+        daysIndex: 0,
     },
     input: {
         listInputValue: null,
