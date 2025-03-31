@@ -8,7 +8,6 @@ function addItemToList() {
             model.data.days[day].push({ id: (model.data.days[day].length), todo: model.input.listInputValue, time: inp.timeInputValue })
         }
     }
-
     model.input.listInputValue = null;
     updateView();
 }

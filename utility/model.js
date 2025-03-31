@@ -1,4 +1,7 @@
 const model = {
+    app: {
+        currentPage: 'listView'
+    },
     data: {
         days: {
             monday: [],

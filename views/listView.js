@@ -1,16 +1,16 @@
-function updateView() {
+function listView() {
     let html = `
-    <div class="add-list-view">Add to your list!</div>
+    <div class="add-list-view">ToDos!</div>
         <label >Choose a day:</label>
         <select value="${model.input.whatDayInput ?? ''}" oninput="model.input.whatDayInput = this.value">
         ${renderOptions()}
         </select>
-    <input type="text" value="${model.input.listInputValue ?? ''}" oninput="model.input.listInputValue = this.value">
-    <input type="time" value="${model.input.timeInputValue ?? ''}" onchange="model.input.timeInputValue= this.value">
-    <button onclick="addItemToList()">Add item!</button>
+    Type what you need to do!<input type="text" value="${model.input.listInputValue ?? ''}" oninput="model.input.listInputValue = this.value">
+    Choose the time it needs to be done!<input type="time" value="${model.input.timeInputValue ?? ''}" onchange="model.input.timeInputValue= this.value">
+    <button onclick="addItemToList()">Todo!</button>
     ${renderList() ?? ''}
     `
-    document.getElementById('app').innerHTML = html;
+    return html;
 }
 
 function renderList() {
